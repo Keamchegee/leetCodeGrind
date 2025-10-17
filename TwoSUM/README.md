@@ -30,3 +30,8 @@ Works correctly for all valid inputs
 Inefficient for large arrays due to nested loops
 
 Optimized version IS using a HashMap for O(n) operations performance
+
+//======optimization====
+KEY idea : is to check if the complement (target - current_number) exists in the hashmap.
+Achieved thru:
+Instead of checking all pairs (which is O(n²)), we keep track of the numbers we’ve seen and their indices(O(n)) for both space  and time complexities;
